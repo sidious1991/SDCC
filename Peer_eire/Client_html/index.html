@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bellagio Casinò</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/font-awesome/css/Montserrat.css" rel="stylesheet" type ="text/css">
+    <link href="vendor/font-awesome/css/Lato.css" rel="stylesheet" type ="text/css">
+
+</head>
+
+<body id="page-top" class="index" style="padding-right:0px !important ">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container" >
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a id="username" class="navbar-brand" href="#page-top">Nome_Utente</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a><span id="totalCredit"></span><span class="glyphicon glyphicon-euro" aria-hidden="true"></span></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">Game Rules</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a onmouseover="" style="cursor: pointer;" ><span id="logout" >LogOut</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header  id="header" style="background-color:#2C3E50">
+        <div class="container" style="background-color:#2C3E50">
+            <div class="row" style="background-color:#2C3E50">
+                <div class="col-lg-12">
+
+                    <div class="intro-text" style="position: relative; top: -80px ">
+                        <span class="name">Bellagio Casinò</span>
+                        <h2 align="center" style="padding-left:200px">Game phase:<input type="text" readonly align:"center" id="gamePhase"style="background-color:transparent;border-color:transparent;"/></h2>
+                        <hr class="star-light" >
+                    </div>
+                    <table id="tabellone" class="table table-bordered tabellone" style="position: relative; top: -75px; " >
+        <tbody>
+                        <tr data-toggle="modal" data-target="#modale-puntata" >
+                          <td id="0" rowspan="3" background='img/0.png' width="149px" height="225px" style='border: 1px solid transparent ; background-repeat: no-repeat ; border-right: 1px solid white '></td>
+
+                          <td id="3" background='img/3.1.png' width="75px" height="75px" style='border: 2px solid white ; border-top: 0px solid transparent ; background-position:center'></td>
+                          <td id="6" background='img/6.1.png' width="75px" height="75px"style='border: 2px solid white  ; border-top: 0px solid transparent  ; background-position:center'></td>
+                          <td id="9" background='img/9.1.png' width="75px" height="75px"style='border: 2px solid white ; border-top: 0px solid transparent  ; background-position:center'></td>
+                          <td id="12" background='img/12.1.png' width="75px" height="75px"style='border: 2px solid white ; border-top: 0px solid transparent  ; background-position:center'></td>
+                          <td id="15" background='img/15.1.png' width="75px" height="75px"style='border: 2px solid white ; border-top: 0px solid transparent  ; background-position:center'></td>
+                          <td id="18" background='img/18.1.png' width="75px" height="75px"style='border: 2px solid white ; border-top: 0px solid transparent  ; background-position:center'></td>
+                          <td id="21" background='img/21.1.png' width="75px" height="75px"style='border: 2px solid white ; border-top: 0px solid transparent  ; background-position:center'></td>
+                          <td id="24" background='img/24.1.png' width="75px" height="75px"style='border: 2px solid white ; border-top: 0px solid transparent  ; background-position:center'></td>
+                          <td id="27" background='img/27.1.png' width="75px" height="75px"style='border: 2px solid white ; border-top: 0px solid transparent ; background-position:center '></td>
+                          <td id="30" background='img/30.1.png' width="75px" height="75px"style='border: 2px solid white ; border-top: 0px solid transparent  ; background-position:center'></td>
+                          <td id="33" background='img/33.1.png' width="75px" height="75px"style='border: 2px solid white ; border-top: 0px solid transparent  ; background-position:center'></td>
+                          <td id="36" background='img/36.1.png' width="75px" height="75px"style='border: 2px solid white ; border-top: 0px solid transparent  ; background-position:center'></td>
+                          <td id="2to1-1" background='img/col1.png' width="60px" height="75px"style='border: 2px solid white ; border-top: 0px solid transparent  ; background-position:center'></td>
+                        </tr>
+
+
+
+                        <tr data-toggle="modal" data-target="#modale-puntata">
+
+                          <td id="2" background='img/2.png' width="75px" height="75px" style='border: 2px solid white ; background-position:center'></td>
+                          <td id="5" background='img/5.png' width="75px" height="75px"style='border: 2px solid white ; background-position:center'></td>
+                          <td id="8" background='img/8.png' width="75px" height="75px"style='border: 2px solid white ; background-position:center'></td>
+                          <td id="11" background='img/11.png' width="75px" height="75px"style='border: 2px solid white ; background-position:center'></td>
+                          <td id="14" background='img/14.png' width="75px" height="75px"style='border: 2px solid white ; background-position:center'></td>
+                          <td id="17" background='img/17.png' width="75px" height="75px"style='border: 2px solid white ; background-position:center'></td>
+                          <td id="20" background='img/20.png' width="75px" height="75px"style='border: 2px solid white ; background-position:center'></td>
+                          <td id="23" background='img/23.png' width="75px" height="75px"style='border: 2px solid white ; background-position:center'></td>
+                          <td id="26" background='img/26.png' width="75px" height="75px"style='border: 2px solid white ; background-position:center'></td>
+                          <td id="29" background='img/29.png' width="75px" height="75px"style='border: 2px solid white ; background-position:center'></td>
+                          <td id="32" background='img/32.png' width="75px" height="75px"style='border: 2px solid white ; background-position:center'></td>
+                          <td id="35" background='img/35.png' width="75px" height="75px"style='border: 2px solid white ; background-position:center'></td>
+                          <td id="2to1-2" background='img/2To1.png' width="60px" height="75px"style='border: 2px solid white ; background-position:center'></td>
+
+                        </tr>
+                        <tr data-toggle="modal" data-target="#modale-puntata">
+
+                          <td id="1" background='img/1.1.png' width="75px" height="75px" style='border: 2px solid white; border-bottom: 0px solid transparent; background-position:center'></td>
+                          <td id="4" background='img/4.1.png' width="75px" height="75px"style='border: 2px solid white ; border-bottom: 0px solid transparent; background-position:center'></td>
+                          <td id="7" background='img/7.1.png' width="75px" height="75px"style='border: 2px solid white ; border-bottom: 0px solid transparent; background-position:center'></td>
+                          <td id="10" background='img/10.1.png' width="75px" height="75px"style='border: 2px solid white ; border-bottom: 0px solid transparent; background-position:center'></td>
+                          <td id="13" background='img/13.1.png' width="75px" height="75px"style='border: 2px solid white ; border-bottom: 0px solid transparent; background-position:center'></td>
+                          <td id="16" background='img/16.1.png' width="75px" height="75px"style='border: 2px solid white ; border-bottom: 0px solid transparent; background-position:center'></td>
+                          <td id="19" background='img/19.1.png' width="75px" height="75px"style='border: 2px solid white ; border-bottom: 0px solid transparent; background-position:center'></td>
+                          <td id="22" background='img/22.1.png' width="75px" height="75px"style='border: 2px solid white ; border-bottom: 0px solid transparent; background-position:center'></td>
+                          <td id="25" background='img/25.1.png' width="75px" height="75px"style='border: 2px solid white ; border-bottom: 0px solid transparent; background-position:center'></td>
+                          <td id="28" background='img/28.1.png' width="75px" height="75px"style='border: 2px solid white ; border-bottom: 0px solid transparent; background-position:center'></td>
+                          <td id="31" background='img/31.1.png' width="75px" height="75px"style='border: 2px solid white ; border-bottom: 0px solid transparent; background-position:center'></td>
+                          <td id="34" background='img/34.1.png' width="75px" height="75px"style='border: 2px solid white ; border-bottom: 0px solid transparent ; background-position:center'></td>
+                          <td id="2to1-3" background='img/2To1.png' width="60px" height="75px"style='border: 2px solid white; background-position:center'></td>
+
+                        </tr>
+                        <tr>
+                          <td rowspan="2"  style='border: 1px solid transparent'style='border: 2px solid white; background-position:center'></td>
+
+                          <td id="1st12" colspan="4" background='img/1st12.png' width="300px" height="75px" style='border: 2px solid white; border-top: 0px solid transparent; background-position:center' data-toggle="modal" data-target="#modale-puntata"></td>
+
+                          <td id="2nd12" colspan="4" background='img/2nd12.png' width="300px" height="75px"style='border: 2px solid white ;border-top: 0px solid transparent; background-position:center' data-toggle="modal" data-target="#modale-puntata"></td>
+                          <td id="3rd12" colspan="4" background='img/3rd12.png' width="300px" height="75px"style='border: 2px solid white ; border-top: 0px solid transparent; background-position:center' data-toggle="modal" data-target="#modale-puntata"></td>
+
+                        </tr>
+                        <tr data-toggle="modal" data-target="#modale-puntata">
+                          <td id="1stHalf" colspan="2" background='img/1stHalf.png' width="150px" height="75px"style='border: 2px solid white; background-position:center'></td>
+                          <td id="even" colspan="2" background='img/even.png' width="150px" height="75px"style='border: 2px solid white; background-position:center'></td>
+                          <td id="red" colspan="2" background='img/red.png' width="150px" height="75px"style='border: 2px solid white ;background-repeat: no-repeat ; background-color:#2b9d62 ; background-position:center'></td>
+                          <td id="black" colspan="2" background='img/black.png' width="150px" height="75px"style='border: 2px solid white ; background-repeat: no-repeat ; background-color:#2b9d62; background-position:center'></td>
+                          <td id="odd" colspan="2" background='img/odd.png' width="150px" height="75px"style='border: 2px solid white; background-position:center'></td>
+                          <td id="2ndHalf" colspan="2" background='img/2ndHalf.png' width="150px" height="75px"style='border: 2px solid white ; background-position:center'></td>
+
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <div class="intro-text">
+                        <span class="name"><span>Place you're bet</span><span id="totalBet"></span><span id="puntata"></span></span>
+                        <span class="name"><span id="confirmBetText"></span><button id="confirmBet" hidden type="button" style="border-radius: 60px; border: 1px solid transparent; background-color: transparent;color:#2b9d62" value="Yes"><i class="fa fa-check"></i></button></span>
+                        <hr class="star-light">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="modal fade" id="modale-puntata" tabindex="-1" role="dialog" aria-hidden="true" >
+        <div class="modal-content" style="position:absolute; top:50px; left:100px; right:100px">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body " align="center">
+                            <h2>Total bet on <span id="textModal"></span>:
+                              <span id="tempModalQuote">0</span></h2>
+                            <hr class="star-primary">
+                            <div class= 'col-lg-3'>
+                            <img class="img-responsive" src="img/Fiches_1.png" alt="">
+                            <button class="modal-fiches"type="button" value="-1" style="background-color:#0e1a22; height:50px ;width:50px ; border-radius:25px; border-color:#0e1a22"><span class="glyphicon glyphicon-minus" aria-hidden="true" style="color:white"></button>
+                            <button class="modal-fiches"type="button" value="1" style="background-color:#0e1a22; height:50px ;width:50px ; border-radius:25px; border-color:#0e1a22"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:white"></button><br>
+                          </div>
+                          <div class= 'col-lg-3'>
+                            <img class="img-responsive" src="img/Fiches_5.png" alt="">
+
+                            <button class="modal-fiches " type="button" value="-5" style="background-color:#0e1a22; height:50px ;width:50px ; border-radius:25px; border-color:#0e1a22"><span class="glyphicon glyphicon-minus" aria-hidden="true"style="color:white" ></button>
+                            <button class="modal-fiches "  type="button" value="5" style="background-color:#0e1a22; height:50px ;width:50px ; border-radius:25px; border-color:#0e1a22"><span class="glyphicon glyphicon-plus" aria-hidden="true"style="color:white" ></button><br>
+                          </div>
+                          <div class= 'col-lg-3'>
+                            <img class="img-responsive" src="img/Fiches_10.png" alt="">
+
+                            <button class="modal-fiches" type="button" value="-10" style="background-color:#0e1a22; height:50px ;width:50px ; border-radius:25px; border-color:#0e1a22"><span class="glyphicon glyphicon-minus" aria-hidden="true"style="color:white" ></button>
+                            <button class="modal-fiches" type="button" value="10" style="background-color:#0e1a22; height:50px ;width:50px ; border-radius:25px; border-color:#0e1a22"><span class="glyphicon glyphicon-plus" aria-hidden="true"style="color:white" ></button><br>
+                          </div>
+                            <div class= 'col-lg-3'>
+                              <img class="img-responsive" src="img/Fiches_50.png" alt="">
+
+                            <button class="modal-fiches" type="button" value="-50" style="background-color:#0e1a22; height:50px ;width:50px ; border-radius:25px; border-color:#0e1a22"><span class="glyphicon glyphicon-minus" aria-hidden="true"style="color:white" ></button>
+                            <button class="modal-fiches" type="button" value="50" style="background-color:#0e1a22; height:50px ;width:50px ; border-radius:25px; border-color:#0e1a22"><span class="glyphicon glyphicon-plus" aria-hidden="true"style="color:white" ></button><br><br>
+                          </div>
+                            <button class="modal-fiches-confirm btn btn-success" type="button" data-dismiss="modal"><i class="fa fa-check"></i> Confirm </button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="modale-roulette" tabindex="-1" role="dialog" aria-hidden="true" >
+        <div  class="modal-content" style="position:absolute; top:50px; left:100px; right:100px; background-color:transparent ;box-shadow: none; border-color:transparent;" align="center">
+            <div class="close-modal" data-dismiss="modal" >
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container" align="center">
+              <h1 ><mark style="background-color:#0e1a22; color:white; padding-left:70px; padding-right:70px">Les jeux sont faits</mark></h1>
+
+                <div class="row" align="center">
+                  <video id="video">
+                    <source src="img/video/Roulette Wheel Animation.mp4" type="video/mp4">
+                  </video>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="modale-security" tabindex="-1" role="dialog" aria-hidden="true" >
+     <div class="modal-dialog modal-lg" style="top:50px">
+        <div  class="modal-content modal-lg" >
+        <div class="modal-header modal-lg">
+          <h4 class="modal-title" style="color:#2b9d62">Please Confirm your access</h4>
+        </div>
+        <div class="modal-body modal-lg">
+
+
+      <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row control-group">
+                              <div class="form-group col-xs-12 floating-label-form-group controls">
+                                  <label>Please insert your daily code</label>
+                                  <input id="codeForm" type="password" class="form-control" placeholder="Please insert your daily code"  required data-validation-required-message="Please enter your name.">
+                                  <p class="help-block text-danger"></p>
+                              </div>
+                          </div>
+
+                          <br>
+                          <div id="success"></div>
+
+                      </form>
+        </div>
+         <div class="modal-footer modal-lg">
+          <button type="button" id="confirm-access" class="btn btn-success" data-dismiss="modal">Confirm</button>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+    <div class="modal fade" id="modale-number" tabindex="-1" role="dialog" aria-hidden="true" >
+        <div  class="modal-content" style=" position:absolute; top:200px; left:100px; right:100px; background-color:transparent;box-shadow: none; border-color:transparent;" align="center">
+            <div class="close-modal" data-dismiss="modal" >
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container" align="center">
+              <h1 ><mark style="background-color:#0e1a22; color:white; padding-left:70px; padding-right:70px; padding-bottom:210px; padding-top:35px">The number draw is..</mark></h1>
+
+                <div class="row" align="center" style="padding-top:5px">
+                  <img id="drawNumber" src="img/34.1.png" style = 'background-repeat: no-repeat;
+                  background-position: 65%;
+                  border-radius: 50%;
+                  width: 100px;
+                  height: 100px; border:5px black solid;'></img>
+                  <h1 ><mark id="result" style="background-color:#0e1a22; color:white;"></mark></h1>
+
+            </div>
+            </div>
+        </div>
+
+    </div>
+
+    <section class="success" id="about" style='background-color:#0e1a22'>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                  <div class="intro-text">
+                      <h1 class="name" tyle="position: relative; top: -1000px ">Game Rules</h1>
+                      <hr class="star-light "  >
+                  </div>
+
+                  <table class="table table-bordered">
+                <thead>
+                    <tr>
+                      <td colspan="2"  style='background-repeat: no-repeat;background-position:center ; border: 3px solid #2C3E50; border-bottom: 3px solid #2C3E50 ' ><h2>Firs of all, choice the bet from the list belove and attend the exit of number from roulette.</h2>
+                                        <h2>Let's Play and Good Luck</h2></td>
+                    </tr>
+                    <tr>
+                      <td colspan='2' width="75 px" height="50px" style='border: 7px solid transparent ;border-top: 3px solid #2C3E50' ></td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td background='img/3.1.png' style='background-repeat: no-repeat;background-position:center ; border: 7px solid #0e1a22  ' width="75 px" height="75px" ></td>
+                        <td height="75px" style='background-position:center ; border: 7px solid transparent '><h2 height="75px">Bet on single Number</h2></td>
+                        </tr>
+                        <tr>
+                          <td background='img/2To1_legend.png' style='background-repeat: no-repeat; background-position:center; border: 7px solid #0e1a22 ' width='75px' height='75px'></td>
+                          <td height='75px'  style='background-position:center ; border: 7px solid transparent '><h2 height='75px'> Bet on selected row </h2></td>
+                          </tr>
+                          <tr>
+                            <td  background='img/1st12.png' style='background-repeat: no-repeat; background-position:center; border: 14px solid #0e1a22 ' width='225px' height='75px'></td>
+                            <td height='75px' style='background-position:center ; border: 7px solid transparent '><h2 height='75px'> Bet on the first 12th number</h2></td>
+                            </tr>
+                            <tr>
+                              <td background='img/2nd12.png' style='background-repeat: no-repeat; background-position:center; border: 14px solid #0e1a22 ' width='225px' height='75px'></td>
+                              <td  height='75px' style='background-position:center ; border: 7px solid transparent '><h2 height='75px'> Bet on the second 12th number</h2></td>
+                              </tr>
+                              <tr>
+                                <td background='img/3rd12.png' style='background-repeat: no-repeat; background-position:center; border: 14px solid #0e1a22 ' width='225px' height='75px'></td>
+                                <td  height='75px' style='background-position:center ; border: 7px solid transparent '><h2 height='75px'> Bet on the third 12th number</h2></td>
+                                </tr>
+                                <tr>
+                                  <td background='img/1stHalf.png' style='background-repeat: no-repeat; background-position:center; border: 7px solid #0e1a22 ' width='225px' height='75px'></td>
+                                  <td  height='75px' style='background-position:center ; border: 7px solid transparent '><h2 height='75px'> Bet on the first 18th number(1-18)</h2></td>
+                                  </tr>
+                                  <tr>
+                                    <td background='img/2ndHalf.png' style='background-repeat: no-repeat; background-position:center; border: 7px solid #0e1a22; border-bottom: 14px solid #0e1a22  ' width='225px' height='75px'></td>
+                                    <td  height='75px' style='background-position:center ; border: 7px solid transparent '><h2 height='75px'> Bet on the second 18th number(19-36) </h2></td>
+                                    </tr>
+                                    <tr>
+                                      <td background='img/even.png' style='background-repeat: no-repeat; background-position:center; border: 7px solid #0e1a22;  border-bottom: 14px solid #0e1a22 ' width='225px' height='75px'></td>
+                                      <td  height='75px' style='background-position:center ; border: 7px solid transparent '><h2 height='75px'> Bet on the all even number</h2></td>
+                                      </tr>
+                                      <tr>
+                                        <td background='img/odd.png' style='background-repeat: no-repeat; background-position:center; border: 7px solid #0e1a22;  border-bottom: 14px solid #0e1a22 ' width='225px' height='75px'></td>
+                                        <td  height='75px' style='background-position:center ; border: 7px solid transparent '><h2 height='75px'> Bet on the all odd number</h2></td>
+                                        </tr>
+                                        <tr>
+                                          <td background='img/red.png' style='background-repeat: no-repeat; background-position:center; border: 7px solid #0e1a22;  border-bottom: 8px solid #0e1a22; border-top: 0px solid #2C3E50 ' width='225px' height='75px'></td>
+                                          <td  height='75px' style='background-position:center ; border: 7px solid transparent '><h2 height='75px'> Bet on the all red number</h2></td>
+                                          </tr>
+                                          <tr>
+                                            <td background='img/black.png' style='background-repeat: no-repeat; background-position:center; border: 7px solid #0e1a22 ' width='225px' height='75px'></td>
+                                            <td  height='75px' style='background-position:center ; border: 7px solid transparent '><h2 height='75px'> Bet on the all black number</h2></td>
+                                            </tr>
+                    </tbody>
+                  </table>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <footer class="text-center">
+      <div class="footer-above">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col col-md-6" style="padding-left:100px">
+                    <h3 style="padding-right:225px">Location</h3>
+                    <div class ="col col-md-3">
+                      <img class="img-responsive" src="img/logotv.png" alt="">
+                    </div>
+                    <div class ="col col-md-3">
+
+                      <p>University of Rome
+                        <br>Tor Vergata</p>
+                      </div>
+                </div>
+
+                <div class="footer-col col-md-6">
+                    <h3>Developers</h3>
+                    <p><b>Agostini Stefano</b>&nbsp&nbsp   email:&nbsp agostinistefano1991@gmail.com</p>
+                     <p><b> Valenti Alessandro </b>&nbsp&nbsp   email:&nbsp alessandro.valenti1991@gmail.com</p>
+                     <p><b>Salomè Paolo</b>&nbsp&nbsp    email:&nbsp paolosalome@gmail.com</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-below">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    Copyright &copy; Your Website 2016
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </footer>
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/freelancer.min.js"></script>
+
+    <script src="js/contact_me.js"></script>
+    <script src="js/function.js"></script>
+
+</body>
+
+</html>

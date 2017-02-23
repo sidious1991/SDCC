@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Freelancer - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">Nome_Utente</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a><span id="totalCredit">10000  </span><span class="glyphicon glyphicon-euro" aria-hidden="true"></span></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">Game Rules</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="">LogOut</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header style="background-color:#2C3E50">
+        <div class="container" style="background-color:#2C3E50">
+            <div class="row" style="background-color:#2C3E50">
+                <div class="col-lg-12">
+                    <!-- <img class="img-responsive" src="img/Tabellone.png" alt=""> -->
+
+                    <div class="intro-text" style="position: relative; top: -80px ">
+                        <span class="name">Bellagio Casinò</span>
+                        <h2 align="center" style="padding-left:200px">Game phase:<input type="text" readonly align: "center" id="gamePhase" style="background-color:transparent;border-color:transparent;"
+                            /></h2>
+                        <hr class="star-light">
+                    </div>
+                    <table id="tabellone" class="table table-bordered tabellone" style="position: relative; top: -75px; ">
+                        <tbody>
+                            <tr data-toggle="modal" data-target="#modale-puntata">
+                                <td id="0" rowspan="3" background='img/0.png' width="149px" height="225px" style='border: 1px solid transparent ; background-repeat: no-repeat ; border-right: 1px solid white '></td>
+
+                                <!-- <th>#</th> -->
+                                <td id="3" background='img/3.1.png' width="75px" height="75px" style='border: 2px solid white ; border-top: 0px solid transparent ; background-position:center'></td>
+                                <td id="6" background='img/6.1.png' width="75px" height="75px" style='border: 2px solid white  ; border-top: 0px solid transparent  ; background-position:center'></td>
+                                <td id="9" background='img/9.1.png' width="75px" height="75px" style='border: 2px solid white ; border-top: 0px solid transparent  ; background-position:center'></td>
+                                <td id="12" background='img/12.1.png' width="75px" height="75px" style='border: 2px solid white ; border-top: 0px solid transparent  ; background-position:center'></td>
+                                <td id="15" background='img/15.1.png' width="75px" height="75px" style='border: 2px solid white ; border-top: 0px solid transparent  ; background-position:center'></td>
+                                <td id="18" background='img/18.1.png' width="75px" height="75px" style='border: 2px solid white ; border-top: 0px solid transparent  ; background-position:center'></td>
+                                <td id="21" background='img/21.1.png' width="75px" height="75px" style='border: 2px solid white ; border-top: 0px solid transparent  ; background-position:center'></td>
+                                <td id="24" background='img/24.1.png' width="75px" height="75px" style='border: 2px solid white ; border-top: 0px solid transparent  ; background-position:center'></td>
+                                <td id="27" background='img/27.1.png' width="75px" height="75px" style='border: 2px solid white ; border-top: 0px solid transparent ; background-position:center '></td>
+                                <td id="30" background='img/30.1.png' width="75px" height="75px" style='border: 2px solid white ; border-top: 0px solid transparent  ; background-position:center'></td>
+                                <td id="33" background='img/33.1.png' width="75px" height="75px" style='border: 2px solid white ; border-top: 0px solid transparent  ; background-position:center'></td>
+                                <td id="36" background='img/36.1.png' width="75px" height="75px" style='border: 2px solid white ; border-top: 0px solid transparent  ; background-position:center'></td>
+                                <td id="col1" background='img/col1.png' width="60px" height="75px" style='border: 2px solid white ; border-top: 0px solid transparent  ; background-position:center'></td>
+                            </tr>
+
+
+
+                            <tr data-toggle="modal" data-target="#modale-puntata">
+                                <!-- <td></td> -->
+
+                                <td id="2" background='img/2.png' width="75px" height="75px" style='border: 2px solid white ; background-position:center'></td>
+                                <td id="5" background='img/5.png' width="75px" height="75px" style='border: 2px solid white ; background-position:center'></td>
+                                <td id="8" background='img/8.png' width="75px" height="75px" style='border: 2px solid white ; background-position:center'></td>
+                                <td id="11" background='img/11.png' width="75px" height="75px" style='border: 2px solid white ; background-position:center'></td>
+                                <td id="14" background='img/14.png' width="75px" height="75px" style='border: 2px solid white ; background-position:center'></td>
+                                <td id="17" background='img/17.png' width="75px" height="75px" style='border: 2px solid white ; background-position:center'></td>
+                                <td id="20" background='img/20.png' width="75px" height="75px" style='border: 2px solid white ; background-position:center'></td>
+                                <td id="23" background='img/23.png' width="75px" height="75px" style='border: 2px solid white ; background-position:center'></td>
+                                <td id="26" background='img/26.png' width="75px" height="75px" style='border: 2px solid white ; background-position:center'></td>
+                                <td id="29" background='img/29.png' width="75px" height="75px" style='border: 2px solid white ; background-position:center'></td>
+                                <td id="32" background='img/32.png' width="75px" height="75px" style='border: 2px solid white ; background-position:center'></td>
+                                <td id="35" background='img/35.png' width="75px" height="75px" style='border: 2px solid white ; background-position:center'></td>
+                                <td id="2to1-1" background='img/2to1.png' width="60px" height="75px" style='border: 2px solid white ; background-position:center'></td>
+
+                            </tr>
+                            <tr data-toggle="modal" data-target="#modale-puntata">
+                                <!-- <td></td> -->
+
+                                <td id="1" background='img/1.1.png' width="75px" height="75px" style='border: 2px solid white; border-bottom: 0px solid transparent; background-position:center'></td>
+                                <td id="4" background='img/4.1.png' width="75px" height="75px" style='border: 2px solid white ; border-bottom: 0px solid transparent; background-position:center'></td>
+                                <td id="7" background='img/7.1.png' width="75px" height="75px" style='border: 2px solid white ; border-bottom: 0px solid transparent; background-position:center'></td>
+                                <td id="10" background='img/10.1.png' width="75px" height="75px" style='border: 2px solid white ; border-bottom: 0px solid transparent; background-position:center'></td>
+                                <td id="13" background='img/13.1.png' width="75px" height="75px" style='border: 2px solid white ; border-bottom: 0px solid transparent; background-position:center'></td>
+                                <td id="16" background='img/16.1.png' width="75px" height="75px" style='border: 2px solid white ; border-bottom: 0px solid transparent; background-position:center'></td>
+                                <td id="19" background='img/19.1.png' width="75px" height="75px" style='border: 2px solid white ; border-bottom: 0px solid transparent; background-position:center'></td>
+                                <td id="22" background='img/22.1.png' width="75px" height="75px" style='border: 2px solid white ; border-bottom: 0px solid transparent; background-position:center'></td>
+                                <td id="25" background='img/25.1.png' width="75px" height="75px" style='border: 2px solid white ; border-bottom: 0px solid transparent; background-position:center'></td>
+                                <td id="28" background='img/28.1.png' width="75px" height="75px" style='border: 2px solid white ; border-bottom: 0px solid transparent; background-position:center'></td>
+                                <td id="31" background='img/31.1.png' width="75px" height="75px" style='border: 2px solid white ; border-bottom: 0px solid transparent; background-position:center'></td>
+                                <td id="34" background='img/34.1.png' width="75px" height="75px" style='border: 2px solid white ; border-bottom: 0px solid transparent ; background-position:center'></td>
+                                <td id="2to1-2" background='img/2to1.png' width="60px" height="75px" style='border: 2px solid white; background-position:center'></td>
+
+                            </tr>
+                            <tr>
+                                <td rowspan="2" style='border: 1px solid transparent' style='border: 2px solid white; background-position:center'></td>
+
+                                <td id="1st12" colspan="4" background='img/1st12.png' width="300px" height="75px" style='border: 2px solid white; border-top: 0px solid transparent; background-position:center'
+                                    data-toggle="modal" data-target="#modale-puntata"></td>
+
+                                <td id="2nd12" colspan="4" background='img/2nd12.png' width="300px" height="75px" style='border: 2px solid white ;border-top: 0px solid transparent; background-position:center'
+                                    data-toggle="modal" data-target="#modale-puntata"></td>
+                                <td id="3rd12" colspan="4" background='img/3rd12.png' width="300px" height="75px" style='border: 2px solid white ; border-top: 0px solid transparent; background-position:center'
+                                    data-toggle="modal" data-target="#modale-puntata"></td>
+                                <!-- <td></td> -->
+
+                            </tr>
+                            <tr data-toggle="modal" data-target="#modale-puntata">
+                                <td id="1stHalf" colspan="2" background='img/1stHalf.png' width="150px" height="75px" style='border: 2px solid white; background-position:center'></td>
+                                <td id="even" colspan="2" background='img/even.png' width="150px" height="75px" style='border: 2px solid white; background-position:center'></td>
+                                <td id="red" colspan="2" background='img/red.png' width="150px" height="75px" style='border: 2px solid white ;background-repeat: no-repeat ; background-color:#2b9d62 ; background-position:center'></td>
+                                <td id="black" colspan="2" background='img/black.png' width="150px" height="75px" style='border: 2px solid white ; background-repeat: no-repeat ; background-color:#2b9d62; background-position:center'></td>
+                                <td id="odd" colspan="2" background='img/odd.png' width="150px" height="75px" style='border: 2px solid white; background-position:center'></td>
+                                <td id="2ndHalf" colspan="2" background='img/2ndHalf.png' width="150px" height="75px" style='border: 2px solid white ; background-position:center'></td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="intro-text">
+                        <span class="name"><span>Place you're bet</span><span id="totalBet"></span><span id="puntata"></span></span>
+                        <span class="name"><span id="confirmBetText"></span><button id="confirmBet" hidden type="button"
+                            style="border-radius: 60px; border: 1px solid transparent; background-color: transparent;color:#2b9d62"
+                            value="Yes"><i class="fa fa-check"></i></button></span>
+                        <!-- <span class="name"><span id="confirmBetText"></span><button id="confirmBet" hidden type="button" style="border-radius: 60px; border: 1px solid transparent; background-color: transparent;color:#2b9d62" value="Yes" data-toggle="modal" data-target="#modale-roulette" data-backdrop="static" data-keyboard="false"><i class="fa fa-check"></i></button></span> -->
+                        <hr class="star-light">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- modale puntata -->
+    <div class="modal fade" id="modale-puntata" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content" style="position:absolute; top:50px; left:100px; right:100px">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body " align="center">
+                            <h2>Total bet on <span id="textModal"></span>:
+                                <span id="tempModalQuote">0</span></h2>
+                            <hr class="star-primary">
+                            <div class='col-lg-3'>
+                                <img class="img-responsive" src="img/Fiches_1.png" alt="">
+                                <button class="modal-fiches" type="button" value="-1" style="background-color:#0e1a22; height:50px ;width:50px ; border-radius:25px; border-color:#0e1a22"><span class="glyphicon glyphicon-minus" aria-hidden="true" style="color:white"></button>
+                                <button class="modal-fiches" type="button" value="1" style="background-color:#0e1a22; height:50px ;width:50px ; border-radius:25px; border-color:#0e1a22"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:white"></button><br>
+                            </div>
+                            <div class='col-lg-3'>
+                                <img class="img-responsive" src="img/Fiches_5.png" alt="">
+
+                                <button class="modal-fiches " type="button" value="-5" style="background-color:#0e1a22; height:50px ;width:50px ; border-radius:25px; border-color:#0e1a22"><span class="glyphicon glyphicon-minus" aria-hidden="true"style="color:white" ></button>
+                                <button class="modal-fiches " type="button" value="5" style="background-color:#0e1a22; height:50px ;width:50px ; border-radius:25px; border-color:#0e1a22"><span class="glyphicon glyphicon-plus" aria-hidden="true"style="color:white" ></button><br>
+                            </div>
+                            <div class='col-lg-3'>
+                                <img class="img-responsive" src="img/Fiches_10.png" alt="">
+
+                                <button class="modal-fiches" type="button" value="-10" style="background-color:#0e1a22; height:50px ;width:50px ; border-radius:25px; border-color:#0e1a22"><span class="glyphicon glyphicon-minus" aria-hidden="true"style="color:white" ></button>
+                                <button class="modal-fiches" type="button" value="10" style="background-color:#0e1a22; height:50px ;width:50px ; border-radius:25px; border-color:#0e1a22"><span class="glyphicon glyphicon-plus" aria-hidden="true"style="color:white" ></button><br>
+                            </div>
+                            <div class='col-lg-3'>
+                                <img class="img-responsive" src="img/Fiches_50.png" alt="">
+
+                                <button class="modal-fiches" type="button" value="-50" style="background-color:#0e1a22; height:50px ;width:50px ; border-radius:25px; border-color:#0e1a22"><span class="glyphicon glyphicon-minus" aria-hidden="true"style="color:white" ></button>
+                                <button class="modal-fiches" type="button" value="50" style="background-color:#0e1a22; height:50px ;width:50px ; border-radius:25px; border-color:#0e1a22"><span class="glyphicon glyphicon-plus" aria-hidden="true"style="color:white" ></button><br><br>
+                            </div>
+                            <button class="modal-fiches-confirm btn btn-success" type="button" data-dismiss="modal"><i class="fa fa-check"></i> Confirm </button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- modale roulette -->
+    <div class="modal fade" id="modale-roulette" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content" style="position:absolute; top:50px; left:100px; right:100px; background-color:transparent ;box-shadow: none; border-color:transparent;"
+            align="center">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container" align="center">
+                <h1>
+                    <mark style="background-color:#0e1a22; color:white; padding-left:70px; padding-right:70px">Les jeux sont faits</mark>
+                </h1>
+
+                <div class="row" align="center">
+                    <video id="video">
+                        <source src="img/video/Roulette Wheel Animation.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- About Section -->
+    <section class="success" id="about" style='background-color:#0e1a22'>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="intro-text">
+                        <h1 class="name" tyle="position: relative; top: -1000px ">Game Rules</h1>
+                        <hr class="star-light ">
+                    </div>
+
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <td colspan="2" style='background-repeat: no-repeat;background-position:center ; border: 3px solid #2C3E50; border-bottom: 3px solid #2C3E50 '>
+                                    <h2>Firs of all, choice the bet from the list belove and attend the exit of number from roulette.</h2>
+                                    <h2>Let's Play and Good Luck</h2>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan='2' width="75 px" height="50px" style='border: 7px solid transparent ;border-top: 3px solid #2C3E50'></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td background='img/3.1.png' style='background-repeat: no-repeat;background-position:center ; border: 7px solid #0e1a22  '
+                                    width="75 px" height="75px"></td>
+                                <td height="75px" style='background-position:center ; border: 7px solid transparent '>
+                                    <h2 height="75px">Bet on single Number</h2>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td background='img/2to1_legend.png' style='background-repeat: no-repeat; background-position:center; border: 7px solid #0e1a22 '
+                                    width='75px' height='75px'></td>
+                                <td height='75px' style='background-position:center ; border: 7px solid transparent '>
+                                    <h2 height='75px'> Bet on selected row </h2>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td background='img/1st12.png' style='background-repeat: no-repeat; background-position:center; border: 14px solid #0e1a22 '
+                                    width='225px' height='75px'></td>
+                                <td height='75px' style='background-position:center ; border: 7px solid transparent '>
+                                    <h2 height='75px'> Bet on the first 12th number</h2>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td background='img/2nd12.png' style='background-repeat: no-repeat; background-position:center; border: 14px solid #0e1a22 '
+                                    width='225px' height='75px'></td>
+                                <td height='75px' style='background-position:center ; border: 7px solid transparent '>
+                                    <h2 height='75px'> Bet on the second 12th number</h2>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td background='img/3rd12.png' style='background-repeat: no-repeat; background-position:center; border: 14px solid #0e1a22 '
+                                    width='225px' height='75px'></td>
+                                <td height='75px' style='background-position:center ; border: 7px solid transparent '>
+                                    <h2 height='75px'> Bet on the third 12th number</h2>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td background='img/1stHalf.png' style='background-repeat: no-repeat; background-position:center; border: 7px solid #0e1a22 '
+                                    width='225px' height='75px'></td>
+                                <td height='75px' style='background-position:center ; border: 7px solid transparent '>
+                                    <h2 height='75px'> Bet on the first 18th number(1-18)</h2>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td background='img/2ndHalf.png' style='background-repeat: no-repeat; background-position:center; border: 7px solid #0e1a22; border-bottom: 14px solid #0e1a22  '
+                                    width='225px' height='75px'></td>
+                                <td height='75px' style='background-position:center ; border: 7px solid transparent '>
+                                    <h2 height='75px'> Bet on the second 18th number(19-36) </h2>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td background='img/Even.png' style='background-repeat: no-repeat; background-position:center; border: 7px solid #0e1a22;  border-bottom: 14px solid #0e1a22 '
+                                    width='225px' height='75px'></td>
+                                <td height='75px' style='background-position:center ; border: 7px solid transparent '>
+                                    <h2 height='75px'> Bet on the all even number</h2>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td background='img/Odd.png' style='background-repeat: no-repeat; background-position:center; border: 7px solid #0e1a22;  border-bottom: 14px solid #0e1a22 '
+                                    width='225px' height='75px'></td>
+                                <td height='75px' style='background-position:center ; border: 7px solid transparent '>
+                                    <h2 height='75px'> Bet on the all odd number</h2>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td background='img/red.png' style='background-repeat: no-repeat; background-position:center; border: 7px solid #0e1a22;  border-bottom: 8px solid #0e1a22; border-top: 0px solid #2C3E50 '
+                                    width='225px' height='75px'></td>
+                                <td height='75px' style='background-position:center ; border: 7px solid transparent '>
+                                    <h2 height='75px'> Bet on the all red number</h2>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td background='img/black.png' style='background-repeat: no-repeat; background-position:center; border: 7px solid #0e1a22 '
+                                    width='225px' height='75px'></td>
+                                <td height='75px' style='background-position:center ; border: 7px solid transparent '>
+                                    <h2 height='75px'> Bet on the all black number</h2>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set
+                                by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download
+                                their free set with 16 icons, or you can purchase the entire set with 146 icons for only
+                                $12!
+                            </p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set
+                                by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download
+                                their free set with 16 icons, or you can purchase the entire set with 146 icons for only
+                                $12!
+                            </p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set
+                                by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download
+                                their free set with 16 icons, or you can purchase the entire set with 146 icons for only
+                                $12!
+                            </p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set
+                                by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download
+                                their free set with 16 icons, or you can purchase the entire set with 146 icons for only
+                                $12!
+                            </p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set
+                                by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download
+                                their free set with 16 icons, or you can purchase the entire set with 146 icons for only
+                                $12!
+                            </p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set
+                                by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download
+                                their free set with 16 icons, or you can purchase the entire set with 146 icons for only
+                                $12!
+                            </p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/freelancer.min.js"></script>
+
+    <script src="js/contact_me.js"></script>
+    <script src="js/function.js"></script>
+
+</body>
+
+</html>
